@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="pantalla" disabled>
+        <div class="botones">
+            <button class="borrar" onclick="borrarTodo()">C</button>
+            <button class="borrar" onclick="borrarEntrada()">CE</button>
+            <button class="borrar" onclick="borrarUltimo()">⌫</button>
+            <div></div>
+            
+            <button onclick="agregarCaracter('7')">7</button>
+            <button onclick="agregarCaracter('8')">8</button>
+            <button onclick="agregarCaracter('9')">9</button>
+            <button class="operador" onclick="agregarCaracter('/')">÷</button>
+            
+            <button onclick="agregarCaracter('4')">4</button>
+            <button onclick="agregarCaracter('5')">5</button>
+            <button onclick="agregarCaracter('6')">6</button>
+            <button class="operador" onclick="agregarCaracter('*')">×</button>
+            
+            <button onclick="agregarCaracter('1')">1</button>
+            <button onclick="agregarCaracter('2')">2</button>
+            <button onclick="agregarCaracter('3')">3</button>
+            <button class="operador" onclick="agregarCaracter('-')">−</button>
+            
+            <button onclick="calcularPorcentaje()">%</button>
+            <button onclick="agregarCaracter('0')">0</button>
+            <button onclick="agregarCaracter('.')">.</button>
+            <button class="operador" onclick="agregarCaracter('+')">+</button>
+            
+            <button onclick="memoriaSumar()">M+</button>
+            <button onclick="memoriaRestar()">M-</button>
+            <button onclick="memoriaRecuperar()">MR</button>
+            <button class="igual" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
